@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4A5A98E13D5F77700F6D93D /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A5A98D13D5F77700F6D93D /* save.png */; };
+		D4E0201213D5EBFD005EF1B1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E0201113D5EBFD005EF1B1 /* Cocoa.framework */; };
+		D4E0201C13D5EBFD005EF1B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4E0201A13D5EBFD005EF1B1 /* InfoPlist.strings */; };
+		D4E0201E13D5EBFD005EF1B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E0201D13D5EBFD005EF1B1 /* main.m */; };
+		D4E0202213D5EBFD005EF1B1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = D4E0202013D5EBFD005EF1B1 /* Credits.rtf */; };
+		D4E0202513D5EBFD005EF1B1 /* BigTextAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E0202413D5EBFD005EF1B1 /* BigTextAppDelegate.m */; };
+		D4E0202813D5EBFD005EF1B1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4E0202613D5EBFD005EF1B1 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D4A5A98D13D5F77700F6D93D /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
+		D4E0200D13D5EBFD005EF1B1 /* BigText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigText.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4E0201113D5EBFD005EF1B1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		D4E0201413D5EBFD005EF1B1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		D4E0201513D5EBFD005EF1B1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		D4E0201613D5EBFD005EF1B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D4E0201913D5EBFD005EF1B1 /* BigText-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BigText-Info.plist"; sourceTree = "<group>"; };
+		D4E0201B13D5EBFD005EF1B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4E0201D13D5EBFD005EF1B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4E0201F13D5EBFD005EF1B1 /* BigText-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BigText-Prefix.pch"; sourceTree = "<group>"; };
+		D4E0202113D5EBFD005EF1B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		D4E0202313D5EBFD005EF1B1 /* BigTextAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BigTextAppDelegate.h; sourceTree = "<group>"; };
+		D4E0202413D5EBFD005EF1B1 /* BigTextAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BigTextAppDelegate.m; sourceTree = "<group>"; };
+		D4E0202713D5EBFD005EF1B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4E0200A13D5EBFC005EF1B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E0201213D5EBFD005EF1B1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4A5A98C13D5F77700F6D93D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D4A5A98D13D5F77700F6D93D /* save.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		D4E0200213D5EBFC005EF1B1 = {
+			isa = PBXGroup;
+			children = (
+				D4E0201713D5EBFD005EF1B1 /* BigText */,
+				D4E0201013D5EBFD005EF1B1 /* Frameworks */,
+				D4E0200E13D5EBFD005EF1B1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4E0200E13D5EBFD005EF1B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4E0200D13D5EBFD005EF1B1 /* BigText.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4E0201013D5EBFD005EF1B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4E0201113D5EBFD005EF1B1 /* Cocoa.framework */,
+				D4E0201313D5EBFD005EF1B1 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4E0201313D5EBFD005EF1B1 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4E0201413D5EBFD005EF1B1 /* AppKit.framework */,
+				D4E0201513D5EBFD005EF1B1 /* CoreData.framework */,
+				D4E0201613D5EBFD005EF1B1 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		D4E0201713D5EBFD005EF1B1 /* BigText */ = {
+			isa = PBXGroup;
+			children = (
+				D4E0202313D5EBFD005EF1B1 /* BigTextAppDelegate.h */,
+				D4E0202413D5EBFD005EF1B1 /* BigTextAppDelegate.m */,
+				D4E0202613D5EBFD005EF1B1 /* MainMenu.xib */,
+				D4E0201813D5EBFD005EF1B1 /* Supporting Files */,
+			);
+			path = BigText;
+			sourceTree = "<group>";
+		};
+		D4E0201813D5EBFD005EF1B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4A5A98C13D5F77700F6D93D /* Images */,
+				D4E0201913D5EBFD005EF1B1 /* BigText-Info.plist */,
+				D4E0201A13D5EBFD005EF1B1 /* InfoPlist.strings */,
+				D4E0201D13D5EBFD005EF1B1 /* main.m */,
+				D4E0201F13D5EBFD005EF1B1 /* BigText-Prefix.pch */,
+				D4E0202013D5EBFD005EF1B1 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4E0200C13D5EBFC005EF1B1 /* BigText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4E0202B13D5EBFD005EF1B1 /* Build configuration list for PBXNativeTarget "BigText" */;
+			buildPhases = (
+				D4E0200913D5EBFC005EF1B1 /* Sources */,
+				D4E0200A13D5EBFC005EF1B1 /* Frameworks */,
+				D4E0200B13D5EBFC005EF1B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BigText;
+			productName = BigText;
+			productReference = D4E0200D13D5EBFD005EF1B1 /* BigText.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4E0200413D5EBFC005EF1B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Lithoglyph Inc.";
+			};
+			buildConfigurationList = D4E0200713D5EBFC005EF1B1 /* Build configuration list for PBXProject "BigText" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D4E0200213D5EBFC005EF1B1;
+			productRefGroup = D4E0200E13D5EBFD005EF1B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4E0200C13D5EBFC005EF1B1 /* BigText */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4E0200B13D5EBFC005EF1B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E0201C13D5EBFD005EF1B1 /* InfoPlist.strings in Resources */,
+				D4E0202213D5EBFD005EF1B1 /* Credits.rtf in Resources */,
+				D4E0202813D5EBFD005EF1B1 /* MainMenu.xib in Resources */,
+				D4A5A98E13D5F77700F6D93D /* save.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4E0200913D5EBFC005EF1B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4E0201E13D5EBFD005EF1B1 /* main.m in Sources */,
+				D4E0202513D5EBFD005EF1B1 /* BigTextAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D4E0201A13D5EBFD005EF1B1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4E0201B13D5EBFD005EF1B1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D4E0202013D5EBFD005EF1B1 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4E0202113D5EBFD005EF1B1 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		D4E0202613D5EBFD005EF1B1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4E0202713D5EBFD005EF1B1 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4E0202913D5EBFD005EF1B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D4E0202A13D5EBFD005EF1B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D4E0202C13D5EBFD005EF1B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BigText/BigText-Prefix.pch";
+				INFOPLIST_FILE = "BigText/BigText-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D4E0202D13D5EBFD005EF1B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BigText/BigText-Prefix.pch";
+				INFOPLIST_FILE = "BigText/BigText-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4E0200713D5EBFC005EF1B1 /* Build configuration list for PBXProject "BigText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4E0202913D5EBFD005EF1B1 /* Debug */,
+				D4E0202A13D5EBFD005EF1B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4E0202B13D5EBFD005EF1B1 /* Build configuration list for PBXNativeTarget "BigText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4E0202C13D5EBFD005EF1B1 /* Debug */,
+				D4E0202D13D5EBFD005EF1B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4E0200413D5EBFC005EF1B1 /* Project object */;
+}
