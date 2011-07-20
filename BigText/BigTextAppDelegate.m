@@ -1,5 +1,10 @@
 #import "BigTextAppDelegate.h"
 
+typedef enum {
+	BTEffectNone = 0,
+	BTEffectZoomBlur = 1
+} BTEffect ;
+
 @implementation BigTextAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -18,18 +23,33 @@
 			return;
 		}
 		NSURL *URL = [savePanel URL];
+		NSBitmapImageRep *bitmapImage = nil;
 		NSAttributedString *s = [textView textStorage];
 		NSRect frame = [s boundingRectWithSize:NSMakeSize(3000.0, 3000.0) options:NSStringDrawingUsesLineFragmentOrigin];
 		NSImage *newImage = [[NSImage alloc] initWithSize:frame.size];
 		[newImage lockFocus];
 		[s drawInRect:frame];
-		NSBitmapImageRep *bitmapImage = [[NSBitmapImageRep alloc] initWithFocusedViewRect:NSMakeRect(0.0, 0.0, [newImage size].width, [newImage size].height)];
+		bitmapImage = [[[NSBitmapImageRep alloc] initWithFocusedViewRect:NSMakeRect(0.0, 0.0, [newImage size].width, [newImage size].height)] autorelease];
 		[newImage unlockFocus];
 		[newImage recache];
 		[newImage autorelease];
 		
 		NSBitmapImageFileType imageType = NSPNGFileType;
 		NSData *data = [bitmapImage representationUsingType:imageType properties:nil];
+		
+		NSInteger effect = [effectMatrix selectedTag];
+		if (effect == BTEffectZoomBlur) {
+			CIFilter *filter = [CIFilter filterWithName:@"CIZoomBlur"];
+			[filter setDefaults];
+			[filter setValue:[CIImage imageWithData:data] forKey:@"inputImage"];
+			CIVector *v = [CIVector vectorWithX:[newImage size].width / 2.0 Y:[newImage size].height / 2.0];
+			[filter setValue:v forKey:@"inputCenter"];
+			[filter setValue:[NSNumber numberWithFloat:3.0] forKey:@"inputAmount"];
+			CIImage *effectedImage = [filter valueForKey: @"outputImage"];
+			bitmapImage = [[NSBitmapImageRep alloc] initWithCIImage:effectedImage];
+			data = [bitmapImage representationUsingType:imageType properties:nil];
+		}
+		
 		[data writeToURL:URL atomically:YES];
 		
 	}];
@@ -60,6 +80,7 @@
 
 @synthesize window = _window;
 @synthesize textView;
+@synthesize effectMatrix;
 
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D4A5A98E13D5F77700F6D93D /* save.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A5A98D13D5F77700F6D93D /* save.png */; };
+		D4D5743E13D6A2B5005DF8C5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D5743D13D6A2B5005DF8C5 /* QuartzCore.framework */; };
 		D4E0201213D5EBFD005EF1B1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4E0201113D5EBFD005EF1B1 /* Cocoa.framework */; };
 		D4E0201C13D5EBFD005EF1B1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4E0201A13D5EBFD005EF1B1 /* InfoPlist.strings */; };
 		D4E0201E13D5EBFD005EF1B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4E0201D13D5EBFD005EF1B1 /* main.m */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		D4A5A98D13D5F77700F6D93D /* save.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save.png; sourceTree = "<group>"; };
+		D4D5743D13D6A2B5005DF8C5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		D4E0200D13D5EBFD005EF1B1 /* BigText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BigText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4E0201113D5EBFD005EF1B1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		D4E0201413D5EBFD005EF1B1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D5743E13D6A2B5005DF8C5 /* QuartzCore.framework in Frameworks */,
 				D4E0201213D5EBFD005EF1B1 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +76,7 @@
 		D4E0201013D5EBFD005EF1B1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D4D5743D13D6A2B5005DF8C5 /* QuartzCore.framework */,
 				D4E0201113D5EBFD005EF1B1 /* Cocoa.framework */,
 				D4E0201313D5EBFD005EF1B1 /* Other Frameworks */,
 			);
