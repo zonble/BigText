@@ -1435,12 +1435,12 @@
 										<object class="NSMatrix" id="308865437">
 											<reference key="NSNextResponder" ref="820341899"/>
 											<int key="NSvFlags">268</int>
-											<string key="NSFrame">{{20, 462}, {175, 38}}</string>
+											<string key="NSFrame">{{20, 442}, {175, 58}}</string>
 											<reference key="NSSuperview" ref="820341899"/>
 											<reference key="NSWindow"/>
 											<reference key="NSNextKeyView" ref="853632921"/>
 											<bool key="NSEnabled">YES</bool>
-											<int key="NSNumRows">2</int>
+											<int key="NSNumRows">3</int>
 											<int key="NSNumCols">1</int>
 											<object class="NSMutableArray" key="NSCells">
 												<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1521,6 +1521,19 @@ AAMAAAABAAEAAAFTAAMAAAAEAAAFwgAAAAAACAAIAAgACAABAAEAAQABA</bytes>
 															<bytes key="NSWhite">MCAwAA</bytes>
 														</object>
 													</object>
+													<reference key="NSAlternateImage" ref="761393146"/>
+													<int key="NSPeriodicDelay">400</int>
+													<int key="NSPeriodicInterval">75</int>
+												</object>
+												<object class="NSButtonCell" id="191961486">
+													<int key="NSCellFlags">67239424</int>
+													<int key="NSCellFlags2">0</int>
+													<string key="NSContents">Left Transform</string>
+													<reference key="NSSupport" ref="487907982"/>
+													<reference key="NSControlView" ref="308865437"/>
+													<int key="NSTag">2</int>
+													<int key="NSButtonFlags">1211912703</int>
+													<int key="NSButtonFlags2">0</int>
 													<reference key="NSAlternateImage" ref="761393146"/>
 													<int key="NSPeriodicDelay">400</int>
 													<int key="NSPeriodicInterval">75</int>
@@ -3557,6 +3570,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 							<reference ref="49709239"/>
 							<reference ref="679521774"/>
 							<reference ref="777710473"/>
+							<reference ref="191961486"/>
 						</object>
 						<reference key="parent" ref="820341899"/>
 					</object>
@@ -3573,6 +3587,11 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					<object class="IBObjectRecord">
 						<int key="objectID">567</int>
 						<reference key="object" ref="777710473"/>
+						<reference key="parent" ref="308865437"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">569</int>
+						<reference key="object" ref="191961486"/>
 						<reference key="parent" ref="308865437"/>
 					</object>
 				</object>
@@ -3735,6 +3754,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					<string>565.IBPluginDependency</string>
 					<string>566.IBPluginDependency</string>
 					<string>567.IBPluginDependency</string>
+					<string>569.IBPluginDependency</string>
 					<string>57.IBPluginDependency</string>
 					<string>58.IBPluginDependency</string>
 					<string>75.IBPluginDependency</string>
@@ -3904,6 +3924,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="unlocalizedProperties">
@@ -3918,7 +3939,7 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">568</int>
+			<int key="maxID">569</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">

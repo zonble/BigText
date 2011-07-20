@@ -2,7 +2,8 @@
 
 typedef enum {
 	BTEffectNone = 0,
-	BTEffectZoomBlur = 1
+	BTEffectZoomBlur = 1,
+	BTEffectLeftTransform = 2
 } BTEffect ;
 
 @implementation BigTextAppDelegate
@@ -48,6 +49,20 @@ typedef enum {
 			CIImage *effectedImage = [filter valueForKey: @"outputImage"];
 			bitmapImage = [[NSBitmapImageRep alloc] initWithCIImage:effectedImage];
 			data = [bitmapImage representationUsingType:imageType properties:nil];
+		}
+		else if (effect == BTEffectLeftTransform) {
+			CIFilter *filter = [CIFilter filterWithName:@"CIPerspectiveTransform"];
+			[filter setDefaults];
+			[filter setValue:[CIImage imageWithData:data] forKey:@"inputImage"];
+			[filter setValue:[CIVector vectorWithX:0 Y:[newImage size].height] forKey:@"inputTopLeft"];
+			[filter setValue:[CIVector vectorWithX:0 Y:0] forKey:@"inputBottomLeft"];
+			[filter setValue:[CIVector vectorWithX:[newImage size].width Y:([newImage size].height * 0.8)] forKey:@"inputTopRight"];
+			[filter setValue:[CIVector vectorWithX:[newImage size].width Y:([newImage size].height * 0.2)] forKey:@"inputBottomRight"];
+
+			CIImage *effectedImage = [filter valueForKey: @"outputImage"];
+			bitmapImage = [[NSBitmapImageRep alloc] initWithCIImage:effectedImage];
+			data = [bitmapImage representationUsingType:imageType properties:nil];
+
 		}
 		
 		[data writeToURL:URL atomically:YES];
