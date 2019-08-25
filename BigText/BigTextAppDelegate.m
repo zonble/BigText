@@ -30,11 +30,11 @@ typedef enum {
 		NSImage *newImage = [[NSImage alloc] initWithSize:frame.size];
 		[newImage lockFocus];
 		[s drawInRect:frame];
-		bitmapImage = [[[NSBitmapImageRep alloc] initWithFocusedViewRect:NSMakeRect(0.0, 0.0, [newImage size].width, [newImage size].height)] autorelease];
+		bitmapImage = [[NSBitmapImageRep alloc] initWithFocusedViewRect:NSMakeRect(0.0, 0.0, [newImage size].width, [newImage size].height)];
 		[newImage unlockFocus];
 		[newImage recache];
-		[newImage autorelease];
-		
+//		[newImage autorelease];
+
 		NSBitmapImageFileType imageType = NSPNGFileType;
 		NSData *data = [bitmapImage representationUsingType:imageType properties:@{}];
 		

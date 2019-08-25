@@ -3,15 +3,15 @@
 
 @interface BigTextAppDelegate : NSObject <NSApplicationDelegate> 
 {
-	NSWindow *_window;
-	NSTextView *textView;
-	NSMatrix *effectMatrix;
+	NSWindow *__unsafe_unretained _window;
+	NSTextView *__unsafe_unretained textView;
+	NSMatrix *__unsafe_unretained effectMatrix;
 }
 
 - (IBAction)saveImage:(id)sender;
 
-@property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet NSTextView *textView;
-@property (assign) IBOutlet NSMatrix *effectMatrix;
+@property (unsafe_unretained) IBOutlet NSWindow *window;
+@property (unsafe_unretained) IBOutlet NSTextView *textView;
+@property (unsafe_unretained) IBOutlet NSMatrix *effectMatrix;
 
 @end
