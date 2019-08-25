@@ -36,7 +36,7 @@ typedef enum {
 		[newImage autorelease];
 		
 		NSBitmapImageFileType imageType = NSPNGFileType;
-		NSData *data = [bitmapImage representationUsingType:imageType properties:nil];
+		NSData *data = [bitmapImage representationUsingType:imageType properties:@{}];
 		
 		NSInteger effect = [effectMatrix selectedTag];
 		if (effect == BTEffectZoomBlur) {
@@ -48,7 +48,7 @@ typedef enum {
 			[filter setValue:[NSNumber numberWithFloat:3.0] forKey:@"inputAmount"];
 			CIImage *effectedImage = [filter valueForKey: @"outputImage"];
 			bitmapImage = [[NSBitmapImageRep alloc] initWithCIImage:effectedImage];
-			data = [bitmapImage representationUsingType:imageType properties:nil];
+			data = [bitmapImage representationUsingType:imageType properties:@{}];
 		}
 		else if (effect == BTEffectLeftTransform) {
 			CIFilter *filter = [CIFilter filterWithName:@"CIPerspectiveTransform"];
@@ -61,7 +61,7 @@ typedef enum {
 
 			CIImage *effectedImage = [filter valueForKey: @"outputImage"];
 			bitmapImage = [[NSBitmapImageRep alloc] initWithCIImage:effectedImage];
-			data = [bitmapImage representationUsingType:imageType properties:nil];
+			data = [bitmapImage representationUsingType:imageType properties:@{}];
 
 		}
 		
@@ -91,11 +91,9 @@ typedef enum {
 	}
 	return YES;
 }
-	 
+
 
 @synthesize window = _window;
 @synthesize textView;
 @synthesize effectMatrix;
-
-
 @end
