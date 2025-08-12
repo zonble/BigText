@@ -23,13 +23,15 @@ jobs:
     - name: Build Debug configuration
       run: |
         xcodebuild -project BigText.xcodeproj \
-                   -target BigText \
+                   -scheme BigText \
                    -configuration Debug \
+                   -quiet \
                    build
                    
     - name: Build Release configuration
       run: |
         xcodebuild -project BigText.xcodeproj \
-                   -target BigText \
+                   -scheme BigText \
                    -configuration Release \
+                   -quiet \
                    build
