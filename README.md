@@ -73,7 +73,7 @@ A macOS application for creating large text with visual effects and exporting th
 
 MIT License
 
-Copyright (c) 2024 BigText
+Copyright (c) 2024 Weizhong Yang a.k.a zonble
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
